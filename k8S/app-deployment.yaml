@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: flask-app-container
-    image: 139675527364.dkr.ecr.us-east-1.amazonaws.com/k8s-assignment  # Replace with your image repository and image name
+    image: 1139675527364.dkr.ecr.us-east-1.amazonaws.com/k8s-assignment:app  # Replace with your image repository and image name
     ports:
     - containerPort: 8080
     env:
