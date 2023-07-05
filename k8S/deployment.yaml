@@ -21,7 +21,7 @@ spec:
         - containerPort: 8080
         env:
         - name: DBHOST
-          value: mysql-service  # Replace with the hostname of your MySQL service
+          value: 10.244.0.10  # Replace with the hostname of your MySQL service
         - name: DBUSER
           value: root
         - name: DBPWD
