@@ -28,7 +28,7 @@ jobs:
           ECR_REPOSITORY: k8s-assignment
           IMAGE_TAG: app
         run: |
-          cd docker/
+          cd Docker/
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
@@ -38,6 +38,6 @@ jobs:
           ECR_REPOSITORY: k8s-assignment
           IMAGE_TAG: mysql
         run: |
-          cd docker/
+          cd Docker/
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile_mysql .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
