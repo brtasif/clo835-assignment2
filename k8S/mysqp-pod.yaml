@@ -8,3 +8,12 @@ spec:
       image: 139675527364.dkr.ecr.us-east-1.amazonaws.com/k8s-assignment:mysql
       ports:
         - containerPort: 3306
+        env:
+        - name: DBHOST
+          value: mysql-service  # Replace with the hostname of your MySQL service
+        - name: DBUSER
+          value: root
+        - name: DBPWD
+          value: password  # Replace with your MySQL password
+        - name: DATABASE
+          value: employees  # Replace with your MySQL database name
