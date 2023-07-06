@@ -29,4 +29,4 @@ spec:
           - --bind_ip
           - 0.0.0.0
         ports:
-        - containerPort: 27017
+        - containerPort: 3306
