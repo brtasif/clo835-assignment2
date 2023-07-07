@@ -22,7 +22,7 @@ spec:
         image: 139675527364.dkr.ecr.us-east-1.amazonaws.com/k8s-assignment:app
         env:
         - name: DBHOST
-          value: dns  # Replace with the hostname of your MySQL service
+          value: mysql.webserver.svc.cluster.local  # Replace with the hostname of your MySQL service
         - name: DBUSER
           value: root
         - name: DBPWD
@@ -32,4 +32,4 @@ spec:
         - name: APP_COLOR
           value: lime  # Replace with the desired color
         ports:
-        - containerPort: 80
+        - containerPort: 8080
