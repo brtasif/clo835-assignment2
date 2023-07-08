@@ -32,4 +32,4 @@ spec:
         - name: APP_COLOR
           value: lime  # Replace with the desired color
         ports:
-        - containerPort: 8080
+        - containerPort: 80
