@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: web-replicaset
+  name: webserver
   labels:
     app.kubernetes.io/name: webserver
     app.kubernetes.io/component: frontend
@@ -32,5 +32,5 @@ spec:
           value: password  # Replace with your MySQL password
         - name: DATABASE
           value: employees  # Replace with your MySQL database name
-        - name: APP_COLOR
-          value: blue  # Replace with the desired color
+       # - name: APP_COLOR
+       #   value: blue  # Replace with the desired color
