@@ -20,7 +20,7 @@ spec:
       containers:
       - name: webserver
         ports:
-          - containerPort: 80
+          - containerPort: 8080
             protocol: TCP
         image: 139675527364.dkr.ecr.us-east-1.amazonaws.com/k8s-assignment:app
         env:
