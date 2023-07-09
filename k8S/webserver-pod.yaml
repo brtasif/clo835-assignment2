@@ -11,7 +11,7 @@ spec:
     image: 139675527364.dkr.ecr.us-east-1.amazonaws.com/k8s-assignment:app # Replace with your image repository and image name
     env:
     - name: DBHOST
-      value: mysql-service  # Replace with the hostname of your MySQL service
+      value: mysql.webserver.svc.cluster.local  # Replace with the hostname of your MySQL service
     - name: DBUSER
       value: root
     - name: DBPWD
