@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: web
+  name: webserver
   labels:
     app.kubernetes.io/name: webserver
     app.kubernetes.io/component: frontend
